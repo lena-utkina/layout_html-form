@@ -1,1 +1,14 @@
 /* styles go here */
+.form-field {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-field-cats {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.conteiner {
+  margin-bottom: 20px;
+}
