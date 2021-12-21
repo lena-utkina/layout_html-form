@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
 
     <form
@@ -19,45 +18,45 @@
       method="post"
       onsubmit="onSubmit()"
     >
-      <fieldset class="conteiner">
+      <fieldset class="fieldset">
         <legend>Personal information</legend>
 
         <label
-          for="surname-field"
-          class="form-field"
+          for="surnameField"
+          class="formField"
         >
           Surname:
           <input
             type="text"
             name="surname"
-            id="surname-field"
+            id="surnameField"
             autocomplete="off"
             required
           >
         </label>
 
         <label
-          for="name-field"
-          class="form-field"
+          for="nameField"
+          class="formField"
         >
           Name:
           <input
             type="text"
             name="name"
-            id="name-field"
+            id="nameField"
             autocomplete="off"
             required
           >
         </label>
 
         <label
-          for="age-field"
-          class="form-field"
+          for="ageField"
+          class="formField"
         >
-          How old are you?
+          How old are You?
           <input
             type="number"
-            name="age-field"
+            name="ageField"
             value="12"
             min="1"
             max="100"
@@ -66,57 +65,57 @@
         </label>
 
         <label
-          for="date-of-birth-field"
-          class="form-field"
+          for="dateOfBirthField"
+          class="formField"
         >
         Full date of birth:
           <input
             type="date"
-            name="date-of-birth"
-            id="date-of-birth-field"
+            name="dateOfBirth"
+            id="dateOfBirthField"
           >
         </label>
 
         <label
-          for="terms-field"
-          class="form-field"
+          for="termsField"
+          class="formField"
         >
           I accept the term of the agreement
           <input
             type="checkbox"
             name="terms"
-            id="terms-field"
+            id="termsField"
             required
           >
         </label>
 
       </fieldset>
 
-      <fieldset class="conteiner">
+      <fieldset class="fieldset">
         <legend>Registration</legend>
 
         <label
-          for="email-field"
-          class="form-field"
+          for="emailField"
+          class="formField"
         >
           E-mail:
           <input
             type="email"
             name="email"
-            id="email-field"
+            id="emailField"
             placeholder="email@example.com"
             required
           >
         </label>
         <label
-          for="password-field"
-          class="form-field"
+          for="passwordField"
+          class="formField"
         >
           Password:
           <input
             type="password"
             name="password"
-            id="password-field"
+            id="passwordField"
             minlength="8"
             maxlength="32"
             required
@@ -124,66 +123,66 @@
         </label>
       </fieldset>
 
-      <fieldset class="conteiner">
+      <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
 
         Do you love cats?
         <label
-          for="cats-field1"
-          class="form-field-cats"
+          for="catsField1"
+          class="formFieldCats"
         >
 
           <input
             type="radio"
             name="cats"
-            id="cats-field1"
-            value="loves cats">
+            id="catsField1"
+            value="lovesCats">
             Yes
         </label>
 
         <label
-          for="cats-field2"
-          class="form-field-cats"
+          for="catsField2"
+          class="formFieldCats"
         >
           <input
             type="radio"
             name="cats"
-            id="cats-field2"
-            value="does not love cats">
+            id="catsField2"
+            value="doesNotLoveCats">
             No
         </label>
 
         <label
-          for="favcolor-field"
-          class="form-field"
+          for="favColorField"
+          class="formField"
         >
-          What is your favourite color?
+        What is your favorite color?
           <input
             type="color"
-            name="favcolor"
-            id="favcolor-field"
+            name="favColor"
+            id="favColorField"
             value="black"
           >
         </label>
 
         <label
-          for="bed-time-filed"
-          class="form-field"
+          for="bedTimeFiled"
+          class="formField"
         >
           What time do you go to bed?
           <input
           type="time"
-          name="bed-time"
-          id="bed-time-filed">
+          name="bedTime"
+          id="bedTimeFiled">
         </label>
         <label
-          for="favcar-field"
-          class="form-field"
+          for="favCarField"
+          class="formField"
         >
-          What are your favourite brands of cars?
+        What are your favorite brand of cars?
           <select
-            name="favcar"
-            id="favcar-field"
+            name="favCar"
+            id="favCarField"
             multiple
           >
             <option value="bmv">BMV</option>
@@ -194,51 +193,57 @@
         </label>
 
         <label
-          for="rating-field"
-          class="form-field"
+          for="ratingField"
+          class="formField"
         >
-          How do you rate or work?
+          How do you rate our work?
           <input
             type="range"
             name="rating"
-            id="rating-field"
+            id="ratingField"
             value="0"
             min="0"
             max="10"
             >
         </label>
       </fieldset>
-      <fieldset class="conteiner">
+      <fieldset class="fieldset">
         <legend>Additional info</legend>
         <label
-          for="comment-field"
-          class="form-field"
+          for="commentField"
+          class="formField"
         >
           Comments:
           <textarea
             name="comment"
-            id="comment-field"
+            id="commentField"
             cols="17"
             rows="2"
             autocomplete="off"
         ></textarea>
         </label>
         <label
-          for="recommendation-field"
-          class="form-field"
+          for="recommendationField"
+          class="formField"
         >
         Would you recommend us?
           <select
             name="recommendation"
-            id="recommendation-field"
+            id="recommendationField"
           >
             <option value="recommends" checked>yes</option>
-            <option value="does not recommend">no</option>
+            <option value="doesNotRecommend">no</option>
           </select>
         </label>
       </fieldset>
-      <label for="submit-button">
-        <button name="submit" id="submit-button">Submit</button>
+      <label for="submitButton">
+        <button
+          name="submit"
+          type="submit"
+          id="submitButton"
+        >
+        Submit
+        </button>
       </label>
     </form>
   </body>
